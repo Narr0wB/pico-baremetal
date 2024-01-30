@@ -1,4 +1,4 @@
-// Padded and checksummed version of: ./build/firmware.bin
+// Padded and checksummed version of: ./build/tmp.bin
 
 .cpu cortex-m0plus
 .thumb
