@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "usb_common.h": "c",
+        "usb_struct.h": "c",
+        "address_mapped.h": "c",
+        "addressmap.h": "c",
+        "pico.h": "c",
+        "irq.h": "c",
+        "resets.h": "c",
+        "types.h": "c",
+        "usb.h": "c",
+        "platform_defs.h": "c",
+        "dev_lowlevel.h": "c",
+        "resets_regs.h": "c",
+        "resets_struct.h": "c",
+        "int.h": "c"
+    }
+}
