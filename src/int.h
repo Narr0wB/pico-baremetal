@@ -10,8 +10,6 @@ typedef short int16_t;
 typedef char int8_t;
 
 typedef unsigned long long size_t;
-typedef unsigned int uintptr_t;
-
-#define write32(addr, value) *((uint32_t*) (addr)) = value
+typedef uint32_t uintptr_t;
 
 #endif // INT_H

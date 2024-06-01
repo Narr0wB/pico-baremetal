@@ -92,6 +92,8 @@ typedef ioptr const const_ioptr;
 //    return rc;
 //}
 
+#define write32(addr, value) *((io_wo_32*) (addr)) = value
+
 // Helper method used by xip_alias macros to optionally check input validity
 __force_inline static uint32_t xip_alias_check_addr(const void *addr) {
     uint32_t rc = (uintptr_t)addr;
