@@ -58,6 +58,8 @@
 
 #define USB_DESCRIPTOR_TYPE_ENDPOINT 0x05
 
+#define __packed __attribute__((packed))
+
 struct usb_setup_packet {
     uint8_t bmRequestType;
     uint8_t bRequest;

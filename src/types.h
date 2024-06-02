@@ -11,7 +11,7 @@
 
 //#include "pico/assert.h"
 
-#include <stdint.h>
+#include "int.h" 
 #include <stdbool.h>
 #include <stddef.h>
 
@@ -60,7 +60,7 @@ static inline void update_us_since_boot(absolute_time_t *t, uint64_t us_since_bo
 #ifdef NDEBUG
     *t = us_since_boot;
 #else
-    assert(us_since_boot <= INT64_MAX);
+    // assert(us_since_boot <= INT64_MAX);
     t->_private_us_since_boot = us_since_boot;
 #endif
 }

@@ -20,7 +20,7 @@ struct usb_endpoint_configuration {
     uint8_t next_pid;
 };
 
-static struct usb_endpoint_descriptor ep0_in_desc {
+static struct usb_endpoint_descriptor ep0_in_desc = {
   .bLength = sizeof(struct usb_endpoint_descriptor),
   .bDescriptorType = USB_DT_ENDPOINT,
   .bEndpointAddress = USB_DIR_IN | 0,
@@ -29,7 +29,7 @@ static struct usb_endpoint_descriptor ep0_in_desc {
   .bInterval = 0
 };
 
-static struct usb_endpoint_descriptor ep0_out_desc {
+static struct usb_endpoint_descriptor ep0_out_desc = {
   .bLength = sizeof(struct usb_endpoint_descriptor),
   .bDescriptorType = USB_DT_ENDPOINT,
   .bEndpointAddress = USB_DIR_OUT | 0,

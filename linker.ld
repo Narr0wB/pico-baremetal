@@ -7,13 +7,19 @@ MEMORY {
 }
 
 SECTIONS {
-    . = ORIGIN(RAM);
 
     .boot2 : {
+      . = ORIGIN(RAM);
       KEEP(*(.boot2))   
     } > RAM
 
+    .vectors ALIGN(256) : {
+      . = ORIGIN(RAM) + 0x100;
+      KEEP(*(.vectors))
+    } > RAM
+    
     .text : {
-      *(.text)
+      . = ORIGIN(RAM) + 0x200;
+      KEEP(*(.text))
     } > RAM
 }
